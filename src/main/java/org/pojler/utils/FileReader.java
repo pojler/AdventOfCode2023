@@ -24,4 +24,13 @@ public class FileReader {
         return lines;
     }
 
+    public char[][] linesAsCharArray (String filename) {
+        List<String> lines = getLines(filename);
+        char[][] result = new char[lines.size()][lines.get(0).length()];
+        for(int i = 0; i < result.length; i++) {
+            result[i] = lines.get(i).toCharArray();
+        }
+        return result;
+    }
+
 }
