@@ -1,6 +1,6 @@
 package org.pojler;
 
-import org.pojler.day5.Solution;
+import org.pojler.day6.Solution;
 
 public class Main {
 
