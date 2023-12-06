@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class FileReader {
 
@@ -31,6 +32,17 @@ public class FileReader {
             result[i] = lines.get(i).toCharArray();
         }
         return result;
+    }
+
+    public String fileAsString (String filename) {
+        try{
+            ClassLoader classLoader = getClass().getClassLoader();
+            return new Scanner(new File(classLoader.getResource(filename).getFile())).useDelimiter("\\Z").next();
+        }
+        catch (IOException ex) {
+
+        }
+        return "";
     }
 
 }
