@@ -1,4 +1,4 @@
-package org.pojler.day5;
+package org.pojler.day05;
 
 import org.apache.commons.lang3.Range;
 import org.pojler.utils.FileReader;

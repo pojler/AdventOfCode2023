@@ -1,4 +1,4 @@
-package org.pojler.day1;
+package org.pojler.day01;
 
 import org.pojler.utils.FileReader;
 
